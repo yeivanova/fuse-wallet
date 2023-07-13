@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "Mona-Sans";
+  src: url('./fonts/Mona-Sans.woff2') format('woff2'),
+       url('./fonts/Mona-Sans.woff') format('woff'),
+       url('./fonts/Mona-Sans.ttf')  format('truetype');
+}
+
+:root {
+  --backgroundColor: #F2F2F2;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -15,8 +26,10 @@ html {
 }
 
 body {
+  font-family: 'Mona-Sans', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--backgroundColor);
 }
 
 img, picture, video, canvas, svg {
