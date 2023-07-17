@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8e53024a.css",
+    "main.js": "/static/js/main.dc20c7c2.js",
+    "static/js/684.dbe298bf.chunk.js": "/static/js/684.dbe298bf.chunk.js",
+    "static/media/Mona-Sans.ttf": "/static/media/Mona-Sans.7fae628b329f4d1ccdb8.ttf",
+    "static/media/Mona-Sans.woff": "/static/media/Mona-Sans.330ddfeb1b15035e150d.woff",
+    "static/media/Mona-Sans.woff2": "/static/media/Mona-Sans.955a87eb3766a32ac970.woff2",
+    "static/media/fUSD.svg": "/static/media/fUSD.88b41c5a775e7cf2b0d9a99ea4dc5091.svg",
+    "static/media/fuse-logo.svg": "/static/media/fuse-logo.152ae2d44e81f1880767c0829d706fb2.svg",
+    "static/media/sFuse.svg": "/static/media/sFuse.7ce45905e997034d164feadafb6dc1a9.svg",
+    "static/media/Volt.svg": "/static/media/Volt.2450d0c9a5c96c1732a024ba0bebadc3.svg",
+    "index.html": "/index.html",
+    "static/media/defaultIcon.svg": "/static/media/defaultIcon.30da6551e4cda2e8518f3c57f3fa01ad.svg",
+    "main.8e53024a.css.map": "/static/css/main.8e53024a.css.map",
+    "main.dc20c7c2.js.map": "/static/js/main.dc20c7c2.js.map",
+    "684.dbe298bf.chunk.js.map": "/static/js/684.dbe298bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e53024a.css",
+    "static/js/main.dc20c7c2.js"
+  ]
+}
