@@ -75,7 +75,6 @@ export const QRScanner = ({ setAddress }) => {
                 {modalIsOpened && (
                     <Modal closeModal={closeModal} title="Show the QR code">
                         <>
-                            {!isLoaded ? "Loading..." : <></>}
                             <video ref={video}></video>
                         </>
                     </Modal>
