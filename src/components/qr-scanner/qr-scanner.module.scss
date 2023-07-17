@@ -1,0 +1,17 @@
+.scanner_wrapper {
+    display: flex;
+}
+
+.scan_button {
+    gap: 0.375rem;
+    font-size: 1rem;
+    line-height: 1;
+    color: var(--mainDarkColor);
+    background-color: var(--mainLightColor);
+    padding: 0.5rem 0;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-bottom: 0.5rem;
+    border: none;
+    cursor: pointer;
+}

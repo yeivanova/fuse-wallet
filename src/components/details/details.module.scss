@@ -1,0 +1,46 @@
+.token_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: var(--mainDarkColor);
+    text-decoration: none;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+
+    &:nth-child(odd) {
+        background-color: var(--bgColor);
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+
+.token_info_list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 0.375rem;
+}
+
+.token_field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.token_field_name {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.token_field_value {
+    font-weight: 400;
+    font-size: 1.25rem;
+}

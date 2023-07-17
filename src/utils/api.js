@@ -1,0 +1,1 @@
+export const baseUrl = 'https://explorer.fuse.io/api';

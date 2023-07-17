@@ -1,0 +1,109 @@
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 105rem;
+    padding: 2.15rem 2rem;
+    margin: auto;
+
+    @media screen and (max-width: 991px) {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.logo {
+    @media screen and (max-width: 767px) {
+        max-height: 1.5rem;
+    }
+}
+
+.navbar_menu {
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.is_opened {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    .navigation_list {
+        flex-direction: column;
+        gap: 0;
+        background-color: var(--mainDarkColor);
+
+        a {
+            padding: 1.25rem 1.5rem;
+            color: var(--mainLightColor);
+            border-bottom: 0.0625rem solid var(--mainLightColor);
+        }
+    }
+}
+
+.navigation_list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    list-style-type: none;
+
+    a {
+        display: block;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1;
+        padding: 0.625rem 1rem;
+        color: var(--mainDarkColor);
+        text-decoration: none;
+    }
+}
+
+.navbar_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.social_link {
+    display: flex;
+}
+
+.button {
+    font-size: 0.875rem;
+    line-height: 1;
+    display: block;
+    color: var(--mainLightColor);
+    background-color: var(--mainDarkColor);
+    padding: 0.75rem 0.875rem;
+    text-decoration: none;
+    border-radius: 5rem;
+}
+
+.toggle_button {
+    display: none;
+    padding: 0;
+    border: none;
+
+    @media screen and (max-width: 991px) {
+        display: flex;
+    }
+}

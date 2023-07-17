@@ -1,18 +1,48 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import { HomePage } from "../../pages/home/home";
-import { NotFoundPage } from "../../pages/404/404";
+import { useState, createContext } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Header } from "../header/header";
+import { HomePage } from "../../pages/home";
+import { DetailsPage } from "../../pages/details";
+import { NotFoundPage } from "../../pages/404";
 
-function App() {
+export const WalletContext = createContext();
+
+const Main = () => {
+    const [isAuthorized, setIsAuthorized] = useState(false);
+
     return (
-        <BrowserRouter basename="/fuse-wallet">
-            <div className="app">
+        <>
+            <Header />
+            <main>
                 <Routes>
                     <Route path="*" element={<NotFoundPage />} />
-                    <Route path="/" element={<HomePage />} />
+                    <Route
+                        path="/"
+                        element={
+                            <HomePage
+                                isAuthorized={isAuthorized}
+                                setIsAuthorized={setIsAuthorized}
+                            />
+                        }
+                    />
+                    <Route
+                        path=":contractAddressHash"
+                        element={<DetailsPage isAuthorized={isAuthorized} />}
+                    />
                 </Routes>
-            </div>
+            </main>
+        </>
+    );
+};
+
+export const App = () => {
+    const [walletAccount, setWalletAccount] = useState();
+
+    return (
+        <BrowserRouter basename="/fuse-wallet">
+            <WalletContext.Provider value={[walletAccount, setWalletAccount]}>
+                <Main />
+            </WalletContext.Provider>
         </BrowserRouter>
     );
-}
-
-export default App;
+};

@@ -1,0 +1,14 @@
+.panel {
+    width: 100%;
+    max-width: 51.5rem;
+}
+
+.panel_inner {
+    padding: 2.5rem 2rem;
+    background-color: var(--mainLightColor);
+    border-radius: 0.75rem;
+
+    @media screen and (max-width: 767px) {
+        padding: 1.5rem 1.25rem 2.375rem;
+    }
+}
