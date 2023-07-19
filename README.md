@@ -17,4 +17,4 @@ This is a minimally viable product (MVP) of a web application for the Fuse Walle
 
 - Clone repository: git clone
 - Install packages: npm i
-- Runs the app in the development mode: npm start
+- Run the app in the development mode: npm start
